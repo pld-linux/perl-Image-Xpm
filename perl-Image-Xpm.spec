@@ -15,7 +15,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-mage::Xpm - Load, create, manipulate and save xpm image files.
+Image::Xpm - Load, create, manipulate and save xpm image files.
+
+%description -l pl
+Modu³ Image::Xpm - pozwalaj±cy wczytywaæ, tworzyæ, modyfikowaæ oraz
+zapisywaæ pliki obrazków xpm.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
