@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Image
-%define	pnam	Xpm
+%define		pdir	Image
+%define		pnam	Xpm
 Summary:	Image::Xpm - load, create, manipulate and save xpm image files
 Summary(pl):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm
 Name:		perl-Image-Xpm
