@@ -4,8 +4,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Xpm
-Summary:	Image::Xpm - Load, create, manipulate and save xpm image files.
-Summary(pl):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm.
+Summary:	Image::Xpm - Load, create, manipulate and save xpm image files
+Summary(pl):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm
 Name:		perl-Image-Xpm
 Version:	1.09
 Release:	3
