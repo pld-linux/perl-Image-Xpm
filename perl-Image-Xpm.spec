@@ -1,26 +1,34 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Xpm
-Summary:	Image::Xpm perl module
-Summary(pl):	Modu³ perla Image::Xpm
+Summary:	Image::Xpm - Load, create, manipulate and save xpm image files.
+Summary(pl):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm.
 Name:		perl-Image-Xpm
 Version:	1.09
-Release:	2
-License:	distributable
+Release:	3
+License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
+%if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-Image-Base >= 1.06
+%endif
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Image::Xpm - Load, create, manipulate and save xpm image files.
+This class module provides basic load, manipulate and save functionality
+for the xpm file format.  It inherits from Image::Base which provides
+additional manipulation functionality, e.g. new_from_image().
 
 %description -l pl
-Modu³ Image::Xpm - pozwalaj±cy wczytywaæ, tworzyæ, modyfikowaæ oraz
-zapisywaæ pliki obrazków xpm.
+Image::Xpm dostarcza prostej funkconalno¶ci do wczytywania, manipulacji
+i zapisywania obrazów w formacie xpm.  Dziedziczy po Image::Base,
+dostarczaj±cym dodatkowych funkcji manipulacyjnych; np. new_from_image().
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -28,6 +36,8 @@ zapisywaæ pliki obrazków xpm.
 %build
 perl Makefile.PL
 %{__make}
+
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -39,6 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
 %{perl_sitelib}/Image/*
 %{_mandir}/man3/*
