@@ -5,7 +5,7 @@ Summary:	Image::Xpm perl module
 Summary(pl):	Modu³ perla Image::Xpm
 Name:		perl-Image-Xpm
 Version:	1.09
-Release:	1
+Release:	2
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
