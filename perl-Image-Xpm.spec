@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Image
 %define	pnam	Xpm
-Summary:	Image-Xpm perl module
-Summary(pl):	Modu³ perla Image-Xpm
+Summary:	Image::Xpm perl module
+Summary(pl):	Modu³ perla Image::Xpm
 Name:		perl-Image-Xpm
 Version:	1.09
 Release:	1
