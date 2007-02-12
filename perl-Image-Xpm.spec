@@ -6,7 +6,7 @@
 %define		pdir	Image
 %define		pnam	Xpm
 Summary:	Image::Xpm - load, create, manipulate and save xpm image files
-Summary(pl):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm
+Summary(pl.UTF-8):   Image::Xpm - wczytaj, twÃ³rz, modyfikuj i zapisuj obrazy w formacie xpm
 Name:		perl-Image-Xpm
 Version:	1.09
 Release:	5
@@ -27,10 +27,10 @@ This class module provides basic load, manipulate and save functionality
 for the xpm file format.  It inherits from Image::Base which provides
 additional manipulation functionality, e.g. new_from_image().
 
-%description -l pl
-Image::Xpm dostarcza prostej funkconalno¶ci do wczytywania, manipulacji
-i zapisywania obrazów w formacie xpm.  Dziedziczy po Image::Base,
-dostarczaj±cym dodatkowych funkcji manipulacyjnych; np. new_from_image().
+%description -l pl.UTF-8
+Image::Xpm dostarcza prostej funkconalnoÅ›ci do wczytywania, manipulacji
+i zapisywania obrazÃ³w w formacie xpm.  Dziedziczy po Image::Base,
+dostarczajÄ…cym dodatkowych funkcji manipulacyjnych; np. new_from_image().
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
