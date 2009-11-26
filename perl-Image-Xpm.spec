@@ -8,12 +8,12 @@
 Summary:	Image::Xpm - load, create, manipulate and save xpm image files
 Summary(pl.UTF-8):	Image::Xpm - wczytaj, twórz, modyfikuj i zapisuj obrazy w formacie xpm
 Name:		perl-Image-Xpm
-Version:	1.09
-Release:	6
+Version:	1.10
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1efd12d6f90c184b518282bff980a7f1
+# Source0-md5:	5a8faf4eaa5ef25f8a627610b63518a8
 BuildRequires:	perl-devel >= 1:5.8.0
 %if %{with tests}
 BuildRequires:	perl-Image-Base >= 1.06
